@@ -4,13 +4,16 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# copia csproj e restaura
-COPY *.csproj ./
-RUN dotnet restore
+# Copiar solução e projeto
+COPY Aurum.AuthApi/*.csproj Aurum.AuthApi/
+RUN dotnet restore Aurum.AuthApi/Aurum.AuthApi.csproj
 
-# copia tudo e publica
+# Copiar tudo
 COPY . ./
-RUN dotnet publish -c Release -o /app/publish
+
+# Publish
+RUN dotnet publish Aurum.AuthApi/Aurum.AuthApi.csproj \
+    -c Release -o /app/publish
 
 # ================================
 # Runtime stage
@@ -20,9 +23,7 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-# Render usa PORT automaticamente
 ENV ASPNETCORE_URLS=http://+:10000
-
 EXPOSE 10000
 
 ENTRYPOINT ["dotnet", "Aurum.AuthApi.dll"]
