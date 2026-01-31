@@ -195,19 +195,19 @@ app.MapGet("/", () =>
     <div class="card">
       <span class="badge"><span class="dot"></span> ONLINE</span>
       <h1>_SERVICE_</h1>
-      <p>API está funcionando. Ambiente: <code>_ENV_</code></p>
+      <p>API est&aacute funcionando. Ambiente: <code>_ENV_</code></p>
 
       <div class="grid">
         <div class="tile">
-          <div class="k">Serviço</div>
+          <div class="k">Servi&ccedil;o</div>
           <div class="v">_SERVICE_</div>
         </div>
         <div class="tile">
-          <div class="k">Versão</div>
+          <div class="k">Vers&atilde;o</div>
           <div class="v">_VERSION_</div>
         </div>
         <div class="tile">
-          <div class="k">Saúde</div>
+          <div class="k">Sa&uacute;de</div>
           <div class="v"><code>/health</code></div>
         </div>
         <div class="tile">
@@ -232,7 +232,7 @@ app.MapGet("/", () =>
         .Replace("_VERSION_", version)
         .Replace("_ENV_", environment);
 
-    return Results.Content(html, "text/html; charset=utf-8");
+    return Results.Content(html, "text/html", System.Text.Encoding.UTF8);
 });
 
 app.Run();
