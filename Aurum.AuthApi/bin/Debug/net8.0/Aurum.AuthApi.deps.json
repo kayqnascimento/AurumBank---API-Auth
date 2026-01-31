@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.9",
           "Microsoft.Extensions.Configuration.Json": "10.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "Swashbuckle.AspNetCore": "6.6.2"
+          "Swashbuckle.AspNetCore": "6.6.2",
+          "Swashbuckle.AspNetCore.Swagger": "6.6.2"
         },
         "runtime": {
           "Aurum.AuthApi.dll": {}

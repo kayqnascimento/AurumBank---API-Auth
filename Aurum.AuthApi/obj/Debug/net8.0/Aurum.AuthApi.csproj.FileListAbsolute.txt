@@ -472,3 +472,4 @@ D:\Projetos\AurumBank\AurumBank---API-Auth\Aurum.AuthApi\obj\Debug\net8.0\refint
 D:\Projetos\AurumBank\AurumBank---API-Auth\Aurum.AuthApi\obj\Debug\net8.0\Aurum.AuthApi.pdb
 D:\Projetos\AurumBank\AurumBank---API-Auth\Aurum.AuthApi\obj\Debug\net8.0\Aurum.AuthApi.genruntimeconfig.cache
 D:\Projetos\AurumBank\AurumBank---API-Auth\Aurum.AuthApi\obj\Debug\net8.0\ref\Aurum.AuthApi.dll
+D:\Projetos\AurumBank\AurumBank---API-Auth\Aurum.AuthApi\obj\Debug\net8.0\Aurum.AuthApi.sourcelink.json
