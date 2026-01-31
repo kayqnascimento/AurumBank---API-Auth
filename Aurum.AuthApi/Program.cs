@@ -194,7 +194,7 @@ app.MapGet("/", () =>
   <div class="wrap">
     <div class="card">
       <span class="badge"><span class="dot"></span> ONLINE</span>
-      <h1>_SERVICE_</h1>
+      <h1>WebApi: AurumBank Api Auth</h1>
       <p>API est&aacute funcionando. Ambiente: <code>_ENV_</code></p>
 
       <div class="grid">
